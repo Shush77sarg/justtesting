@@ -10,11 +10,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
-    
- 
-      RUN apt-get -y update
-      RUN apt-get -y install nginx
+    runs-on: ubuntu-latest 
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
