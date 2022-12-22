@@ -2,11 +2,7 @@
 name: add_dockerhub
 
 on:
-  workflow_run:
-    workflows:
-      - "go build&test"
-    types:
-      - "completed"
+ push:
 
 jobs:
   add_dockerhub:
